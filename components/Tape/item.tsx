@@ -49,8 +49,6 @@ const Item: React.FC<ItemProps> = ({
 
   const isFirst = index === 0;
   const isLast = index === totalItems - 1;
-
-  //TODO change to COLOR lib
   return (
     <Animated.View
       // onTouchStart={onPress}

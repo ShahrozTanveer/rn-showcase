@@ -38,6 +38,8 @@ export default function RootLayout() {
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="subscription" options={{ headerShown: false }} />
           <Stack.Screen name="music-tape" options={{ headerShown: false }} />
+          <Stack.Screen name="toolbar" options={{ headerShown: false }} />
+
           <Stack.Screen name="+not-found" />
         </Stack>
       </ThemeProvider>

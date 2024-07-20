@@ -14,6 +14,9 @@ export default function Home() {
       <Link href={{ pathname: "music-tape" }}>
         <ThemedText> Music Tape</ThemedText>
       </Link>
+      <Link href={{ pathname: "toolbar" }}>
+        <ThemedText> Toolbar</ThemedText>
+      </Link>
       <HelloWave />
     </ThemedView>
   );
