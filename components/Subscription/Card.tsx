@@ -4,7 +4,7 @@ import {
   useColorScheme,
   View,
 } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { normalized } from "@/constants/Styles";
 import Animated, {
   interpolateColor,
@@ -25,7 +25,6 @@ const Card = ({
   selected: boolean;
   onPress: () => void;
 }) => {
-  const [show, setShow] = useState(false);
   const iconPadding = useSharedValue(50);
   const progress = useSharedValue(30);
   const theme = useColorScheme() ?? "light";

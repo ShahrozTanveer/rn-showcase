@@ -11,6 +11,9 @@ export default function Home() {
       <Link href={{ pathname: "subscription" }}>
         <ThemedText> Subscription Screen</ThemedText>
       </Link>
+      <Link href={{ pathname: "music-tape" }}>
+        <ThemedText> Music Tape</ThemedText>
+      </Link>
       <HelloWave />
     </ThemedView>
   );
