@@ -14,7 +14,7 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import { OptionsType } from "@/app/paywall-interaction";
+import { OptionsType } from "@/app/subscription";
 
 const Card = ({
   data,
