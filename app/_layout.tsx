@@ -35,7 +35,7 @@ export default function RootLayout() {
       <Stack initialRouteName="home">
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen
-          name="paywall-interaction"
+          name="subscription"
           options={{ headerShown: false }}
         />
 

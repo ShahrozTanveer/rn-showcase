@@ -1,4 +1,4 @@
-import Card from "@/components/Paywall/Card";
+import Card from "@/components/Subscription/Card";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedTouchableOpacity } from "@/components/ThemedTouchableOpacity";
 import { ThemedView } from "@/components/ThemedView";
@@ -15,11 +15,11 @@ export type OptionsType = {
   price: string;
   now: string;
 };
-export default function PaywallInteraction() {
+export default function SubscriptionScreen() {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
   const options: Array<OptionsType> = [
-    { label: "Option 1", value: "Yearly", price: "$100", now: "$50.00" },
+    { label: "Option 1", value: "Yearly", price: "$120", now: "$50.00" },
     { label: "Option 2", value: "Monthly", price: "", now: "$10.00" },
   ];
   const backgroundColor = useThemeColor({}, "background");
@@ -70,15 +70,12 @@ export default function PaywallInteraction() {
         <ThemedTouchableOpacity
           lightColor="black"
           darkColor="white"
-          style={{
-            borderRadius: 24,
-            paddingVertical: 12,
-          }}
+          style={styles.subBtn}
         >
           <ThemedText
             lightColor="white"
             darkColor="black"
-            style={{ fontSize: 24, fontWeight: "bold", textAlign: "center" }}
+            style={styles.btnText}
           >
             Subscribe
           </ThemedText>
@@ -92,7 +89,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: normalized(16),
-    // padd,
     justifyContent: "space-around",
   },
   title: {
@@ -107,5 +103,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: normalized(12),
+  },
+  subBtn: {
+    borderRadius: 24,
+    paddingVertical: 12,
+  },
+  btnText: {
+    fontSize: 24,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });

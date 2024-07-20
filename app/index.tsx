@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <ThemedView style={styles.container}>
       <ThemedText>Home Screen</ThemedText>
-      <Link href={{ pathname: "paywall-interaction" }}>
-        <ThemedText> Paywall Interaction</ThemedText>
+      <Link href={{ pathname: "subscription" }}>
+        <ThemedText> Subscription Screen</ThemedText>
       </Link>
       <HelloWave />
     </ThemedView>
