@@ -17,6 +17,9 @@ export default function Home() {
       <Link href={{ pathname: "toolbar" }}>
         <ThemedText> Toolbar</ThemedText>
       </Link>
+      <Link href={{ pathname: "pay-button" }}>
+        <ThemedText> Pay Button</ThemedText>
+      </Link>
       <HelloWave />
     </ThemedView>
   );
